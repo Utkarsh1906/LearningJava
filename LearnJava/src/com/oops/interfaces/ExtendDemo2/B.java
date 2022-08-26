@@ -8,5 +8,4 @@ public interface B {
 //        System.out.println("I am in A");
 //    }
 
-     void fun();
 }
