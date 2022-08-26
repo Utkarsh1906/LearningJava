@@ -1,7 +1,5 @@
 package com.oops.interfaces;
 
-import com.oops.inheritence.BoxWeight;
-
 public class NiceCar {
     //we are hiding these data to become not-accessible from other classes
     private Engine engine;
