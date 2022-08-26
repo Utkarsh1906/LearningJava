@@ -1,7 +1,7 @@
 package com.oops.interfaces;
 
 public class NiceCar {
-    //we are hiding these data to become not-accessible from other classes
+    //we are hiding these data to make it not-accessible from other classes
     private Engine engine;
     private final Media player = new CDPlayer();
 
