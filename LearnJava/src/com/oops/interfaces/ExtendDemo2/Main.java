@@ -8,8 +8,14 @@ public class Main implements A, B {
 
     }
 
+    @Override
+    public void fun(){
+        System.out.println("I am overriding fun() function of interface A");
+    }
+
     public static void main(String[] args) {
         Main obj = new Main();
-        A.greeting();
+        obj.fun();
+        A.greeting(); // static method inside interface will be called via interface name
     }
 }
