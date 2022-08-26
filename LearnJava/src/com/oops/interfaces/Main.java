@@ -12,7 +12,10 @@ public class Main {
 //        car.start();
 //        car.stop();
 
+        //for car1 object, engine will initially refer to object of PowerEngine class
         NiceCar car1=new NiceCar();
+
+        //for car1 object, engine will initially refer to object of ElectricEngine class
         NiceCar car2 = new NiceCar(new ElectricEngine());
 
         car1.start();
