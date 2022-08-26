@@ -12,10 +12,10 @@ public class Main {
 //        car.start();
 //        car.stop();
 
-        //for car1 object, engine will initially refer to object of PowerEngine class
+        //default constructor will run for creating object of car1 reference variable
         NiceCar car1=new NiceCar();
 
-        //for car1 object, engine will initially refer to object of ElectricEngine class
+        //constructor will run according to given parameter for creating object of car2 reference variable
         NiceCar car2 = new NiceCar(new ElectricEngine());
 
         car1.start();

@@ -7,9 +7,10 @@ public class NiceCar {
 
     //default constructor will be called to create an object of PowerEngine class
     public NiceCar() {
-        engine = new PowerEngine();
+        this.engine = new PowerEngine();
     }
 
+    //whichever object passed here as argument will be referenced by our engine reference variable
     public NiceCar(Engine engine) {
         this.engine = engine;
     }
