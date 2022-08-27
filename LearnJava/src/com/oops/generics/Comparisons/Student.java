@@ -5,8 +5,12 @@ public class Student implements Comparable<Student> {
      int rollno;
      float marks;
 
+    @Override
+    public String toString() {
+        return marks + " ";
+    }
 
-     //comparison of objects in JAVA
+    //comparison of objects in JAVA
     @Override
     public int compareTo(Student o) {
         return (int)(this.marks-o.marks);
