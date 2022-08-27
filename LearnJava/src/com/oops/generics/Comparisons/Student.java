@@ -1,0 +1,19 @@
+package com.oops.generics.Comparisons;
+
+//interface Comparable of parameter type Student has a compareTo abstract method
+public class Student implements Comparable<Student> {
+     int rollno;
+     float marks;
+
+
+     //comparison of objects in JAVA
+    @Override
+    public int compareTo(Student o) {
+        return (int)(this.marks-o.marks);
+    }
+
+    public Student(int rollno, float marks) {
+        this.rollno = rollno;
+        this.marks = marks;
+    }
+}
