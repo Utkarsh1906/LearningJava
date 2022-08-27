@@ -6,14 +6,13 @@ import java.util.Arrays;
 //Learn all lessons mentioned below in the link
 
 public class CustomGenArrayList<T> {
-    private T[] data;  //or ---> private Object[] data;
+    private T[] data;
     private static final int DEFAULT_SIZE=10;
     private int size=0;  //working as index value
 
 
     public CustomGenArrayList() {
         this.data= (T[]) new Object[DEFAULT_SIZE];
-    //or ----> this.date=new Object[DEFAULT_SIZE];
     }
 
     public void add(T value){
@@ -26,7 +25,6 @@ public class CustomGenArrayList<T> {
 
     private void resize() {
         T[] temp=(T[])new Object[2*data.length];
-    //or ----> Object[] temp=new Object[2*data.length];
 
         for(int i=0;i<data.length;i++){
             temp[i]=data[i];
@@ -42,7 +40,6 @@ public class CustomGenArrayList<T> {
     @Override
     public String toString() {
         T[] temp=(T[])new Object[size];
-        // or ----> Object[] temp=new Object[size];
         for(int i=0;i<size;i++)
             temp[i]=data[i];
         return Arrays.toString(temp);
