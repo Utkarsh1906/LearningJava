@@ -16,6 +16,8 @@ public class Main {
             System.out.println(divide(a,b));
         }catch(ArithmeticException e){
             System.out.println(e.getMessage());
+        }catch(Exception e){
+            System.out.println("normal exception");
         }finally{
             System.out.println("This keyword 'finally' will always run");
         }
