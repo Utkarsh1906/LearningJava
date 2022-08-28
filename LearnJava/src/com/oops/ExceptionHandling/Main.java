@@ -5,7 +5,8 @@ package com.oops.ExceptionHandling;
  *   2) catch
  *   3) finally
  *   4) throw
- *   5) throws */
+ *   5) throws
+ *   we will learn all these keywords here*/
 public class Main {
     public static void main(String[] args) {
         int a=4;
