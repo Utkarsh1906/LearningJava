@@ -13,8 +13,14 @@ public class Main {
         int b=0;
         try{
             //int c=a/b;
-            System.out.println(divide(a,b));
-        }catch(ArithmeticException e){
+            //System.out.println(divide(a,b));
+            String name="utkarsh";
+            if(name.equals("utkarsh")){
+                throw new MyException("name is utkarsh");
+            }
+        } catch(MyException e){
+            System.out.println(e.getMessage());
+        } catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }catch(Exception e){
             System.out.println("normal exception");
