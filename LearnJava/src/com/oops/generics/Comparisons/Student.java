@@ -1,6 +1,6 @@
 package com.oops.generics.Comparisons;
 
-//interface Comparable of parameter type Student has a compareTo abstract method
+//Comparable interface of parameter type Student has a compareTo abstract method
 public class Student implements Comparable<Student> {
      int rollno;
      float marks;

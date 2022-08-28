@@ -16,15 +16,16 @@ public class Main {
         System.out.println(Arrays.toString(list));
 
         //This runs compareTo function to compare for sorting
-        //Arrays.sort(list);
+         Arrays.sort(list);
 
 
-//        Arrays.sort(list, new Comparator<Student>() {
-//            @Override
-//            public int compare(Student o1, Student o2) {
-//                return (int)(o1.marks-o2.marks);
-//            }
-//        });
+        Arrays.sort(list, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return (int)(o1.marks-o2.marks);
+            }
+        });
+
 
         //It can also be done like this
         //using lambda functions
